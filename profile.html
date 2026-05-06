@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+
+    <h2>AI Planner</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+    <a href="planner.html">AI Planner</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="progress.html">Progress</a>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+
+  </div>
+
+  <!-- Main Content -->
+
+  <div class="main-content">
+
+    <h1>Student Profile</h1>
+
+    <div class="card">
+
+      <input type="text" id="name" placeholder="Full Name"><br>
+
+      <input type="text" id="class" placeholder="Class (e.g. 12 / College)"><br>
+
+      <input type="text" id="goal" placeholder="Your Goal"><br>
+
+      <input type="number" id="hours" placeholder="Study Hours per Day"><br>
+
+      <button onclick="saveProfile()">Save Profile</button>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Saved Profile</h3>
+
+      <div id="profileOutput"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
