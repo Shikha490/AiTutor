@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <h2>AI Planner</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+    <a href="planner.html">AI Planner</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="progress.html">Progress</a>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <h1>Settings & Security</h1>
+
+    <!-- Study Preferences -->
+    <div class="card">
+
+      <h3>Study Preferences</h3>
+
+      <div class="setting-item">
+        <label>Study Hours per Day</label>
+        <input type="number" id="studyHours" placeholder="e.g. 3">
+      </div>
+
+      <div class="setting-item">
+        <label>Preferred Study Time</label>
+        <select id="studyTime">
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+          <option>Night</option>
+        </select>
+      </div>
+
+      <div class="setting-item">
+        <label>Break Duration (minutes)</label>
+        <input type="number" id="breakTime" placeholder="e.g. 10">
+      </div>
+
+      <button onclick="savePreferences()">Save Preferences</button>
+
+    </div>
+
+    <!-- Privacy Controls -->
+    <div class="card">
+
+      <h3>Privacy Controls</h3>
+
+      <div class="setting-item">
+        <label for="dataSave">Save my learning data</label>
+        <input type="checkbox" id="dataSave" checked>
+      </div>
+
+      <div class="setting-item">
+        <label for="notifications">Enable reminders</label>
+        <input type="checkbox" id="notifications">
+      </div>
+
+      <div class="setting-item">
+        <label for="aiPersonal">Allow AI personalization</label>
+        <input type="checkbox" id="aiPersonal" checked>
+      </div>
+
+    </div>
+
+    <!-- Account Settings -->
+    <div class="card">
+
+      <h3>Account Settings</h3>
+
+      <div class="setting-item">
+        <label>New Password</label>
+        <input type="password" id="newPass">
+      </div>
+
+      <button onclick="changePassword()">Change Password</button>
+
+    </div>
+
+    <!-- Security -->
+    <div class="card">
+
+      <h3>Security</h3>
+
+      <button onclick="logout()">Logout</button>
+      <button onclick="resetProgress()">Reset Progress</button>
+      <button onclick="deleteData()">Delete Data</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

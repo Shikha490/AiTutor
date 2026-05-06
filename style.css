@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #121212;
+  color: white;
+}
+
+.login-container {
+  width: 320px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input, select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  background: #00adb5;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #019ca3;
+}
+
+a {
+  color: #00adb5;
+}
+
+/* App Layout */
+
+.app-container {
+  display: flex;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1f1f1f;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #00adb5;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #00adb5;
+}
+
+/* Main Content */
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Cards */
+
+.card {
+  background: #2b2b2b;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.setting-item input {
+  margin-right: 10px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.setting-item input,
+.setting-item select {
+  width: 150px;
+  padding: 6px;
+}
+
+/* Chat Box */
+
+.chat-box {
+  height: 400px;
+  background: #1f1f1f;
+  padding: 15px;
+  overflow-y: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.user {
+  background: #00adb5;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background: #2b2b2b;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+}
+
+.chat-input button {
+  padding: 10px;
+}
