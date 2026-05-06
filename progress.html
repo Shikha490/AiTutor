@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Progress</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+
+    <h2>AI Planner</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+    <a href="planner.html">AI Planner</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="progress.html">Progress</a>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+
+  </div>
+
+  <!-- Main Content -->
+
+  <div class="main-content">
+
+    <h1>Progress Tracker</h1>
+
+    <div class="card">
+
+      <h3>Enter Completed Tasks</h3>
+
+      <input type="number" id="completed" placeholder="Tasks Completed">
+
+      <input type="number" id="total" placeholder="Total Tasks">
+
+      <button onclick="calculateProgress()">Calculate Progress</button>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Your Progress</h3>
+
+      <div id="progressOutput"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
